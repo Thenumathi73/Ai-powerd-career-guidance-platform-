@@ -1,0 +1,29 @@
+function Assessment() {
+  const careers = [
+    "Software Engineer",
+    "Data Scientist",
+    "UI/UX Designer",
+    "AI Engineer"
+  ];
+
+  return (
+    <section className="p-8">
+      <h2 className="text-2xl font-bold mb-4">
+        Recommended Careers
+      </h2>
+
+      <div className="grid md:grid-cols-2 gap-4">
+        {careers.map((career, index) => (
+          <div
+            key={index}
+            className="bg-white p-4 rounded shadow"
+          >
+            {career}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default Assessment;
